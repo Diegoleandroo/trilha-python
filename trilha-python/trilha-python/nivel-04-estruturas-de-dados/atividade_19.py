@@ -3,30 +3,36 @@
 # Atividade 19
 #
 # Enunciado:
-#   [DESAFIO] Sistema de Biblioteca Gamer: cadastre 5 games em uma
-#   lista e permita que o usuário pesquise quantos games quiser,
-#   informando se cada um está disponível. O programa só termina
-#   quando o usuário digitar 'sair'.
+#   Tuplas: crie uma tupla com os 7 dias da semana, mostre o
+#   primeiro e o último dia, a quantidade de dias e percorra a tupla
+#   com for. Depois, explique por que não é possível alterar um
+#   elemento de uma tupla.
+#
+# Exemplo de execução:
+#   Primeiro dia: Domingo
+#   Último dia: Sábado
+#   Quantidade de dias: 7
+#   Dias da semana:
+#   Domingo
+#   Segunda
+#   ... (até Sábado)
 # ====================================================================
 
-#Sistema de Biblioteca Gamer (Desafio)
-#Cadastrar jogos e permitir consultas até o usuário decidir parar.
+# A tupla é criada com PARÊNTESES ( )
+dias = ("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado")
 
+print(f"Primeiro dia: {dias[0]}")
+print(f"Último dia: {dias[-1]}")      # índice -1 = último elemento
+print(f"Quantidade de dias: {len(dias)}")
 
-games = []
+print("Dias da semana:")
+for dia in dias:
+    print(dia)
 
-for i in range(5):
-    game = input("Digite um game: ")
-    games.append(game)
-
-while True:
-
-    pesquisa = input("Pesquisar game (ou sair): ")
-
-    if pesquisa.lower() == "sair":
-        break
-
-    if pesquisa in games:
-        print("Game disponível!")
-    else:
-        print("Game não encontrado.")
+# A tupla é IMUTÁVEL: depois de criada, não pode ser alterada.
+# Se tentar fazer isto, o Python mostra um erro (TypeError):
+#
+# dias[0] = "Feriado"
+#
+# Use tupla quando os dados NÃO devem mudar,
+# como os dias da semana, os meses do ano ou coordenadas.
