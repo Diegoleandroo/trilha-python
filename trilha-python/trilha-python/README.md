@@ -12,7 +12,7 @@ Todas as atividades trazem o **enunciado** no topo do arquivo e o **código reso
 | 1 | [Programas Sequenciais](nivel-01-programas-sequenciais) | `print`, `input`, variáveis, tipos e operadores | 16 |
 | 2 | [Estruturas de Decisão](nivel-02-estruturas-de-decisao) | `if`, `elif`, `else` e operadores lógicos | 16 |
 | 3 | [Estruturas de Repetição](nivel-03-estruturas-de-repeticao) | `for`, `range`, `while`, `break` e `continue` | 16 |
-| 4 | [Estruturas de Dados](nivel-04-estruturas-de-dados) | listas e seus métodos | 19 |
+| 4 | [Estruturas de Dados](nivel-04-estruturas-de-dados) | listas, tuplas, dicionários e conjuntos | 25 |
 | 5 | [Modularização (Funções)](nivel-05-modularizacao-funcoes) | `def`, parâmetros, `return`, escopo e `lambda` | 16 |
 
 Siga os níveis **na ordem**: cada um usa o que foi aprendido nos anteriores.
